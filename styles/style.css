@@ -49,7 +49,11 @@
   padding-bottom: 2px;
 }
 
-.header-contacts {
+.header-menu__item-link--small-spacing {
+  letter-spacing: 1px;
+}
+
+.contacts-block {
   max-width: 240px;
   width: 100%;
   margin-right: 38px;
@@ -58,12 +62,23 @@
   letter-spacing: 1.19px;
 }
 
-.header-contacts__item-link--number {
-  position: relative;
-  bottom: -2px;
+.contacts-block__item {
+  font-style: normal;
 }
 
-.header-contacts__item-link--mail {
+.nowrap {
+  white-space: nowrap;
+}
+
+.contacts-block__item-link--number {
+  position: relative;
+  bottom: -2px;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 0px;
+}
+
+.contacts-block__item-link--mail {
   text-decoration: none;
   border-bottom: 1px solid black;
   padding-bottom: 2px;
@@ -122,7 +137,7 @@
   position: relative;
   left: -11px;
   top: 3px;
-  letter-spacing: 28px;
+  letter-spacing: 32px;
   margin-left: -29px;
 }
 
@@ -166,7 +181,7 @@
   font-size: 22px;
   text-transform: uppercase;
   line-height: 28px;
-  word-spacing: 17px;
+  word-spacing: 18px;
 }
 
 .cover-content__button {
@@ -208,7 +223,6 @@
   position: relative;
   z-index: 1;
   background-repeat: no-repeat;
-  padding-right: 33px;
 }
 
 .lots-cards__item::before {
@@ -240,13 +254,13 @@
   font-weight: 100;
   display: block;
   margin-top: auto;
-  letter-spacing: 0.44px;
 }
 
 .lots-showmore {
+  text-decoration-thickness: 1px;
   display: block;
-  margin-top: 30px;
-  margin-left: 43px;
+  margin-top: 31px;
+  margin-left: 42px;
   font-size: 20px;
   line-height: 23px;
   text-decoration: underline;
@@ -283,15 +297,14 @@
   text-transform: uppercase;
   font-size: 40px;
   line-height: 47px;
-  margin-top: 2px;
-  margin-left: -3px;
+  margin-top: 1px;
+  margin-left: -1px;
 }
 
 .about-content__text {
   margin-top: 101px;
   line-height: 24px;
   font-size: 20px;
-  letter-spacing: 0.3px;
 }
 
 .about-content__text p + p {
@@ -305,28 +318,10 @@
   align-items: top;
 }
 
-.footer-contacts {
-  max-width: 240px;
-  width: 100%;
-  margin-right: 38px;
-  line-height: 1.5;
-  letter-spacing: 1.19px;
-}
-
-.footer-contacts__item {
-  margin-top: 1px;
-}
-
-.footer-contacts__item-link--mail {
-  text-decoration: none;
-  border-bottom: 1px solid black;
-  padding-bottom: 1px;
-}
-
 .footer-menu {
   margin: 0;
   position: relative;
-  right: 12px;
+  right: 15px;
   font-size: 18px;
   line-height: 21px;
   list-style-type: none;
@@ -350,4 +345,8 @@
 .footer-socials__item img {
   width: 48px;
   margin-left: 48px;
+}
+
+.footer-contacts {
+  margin-top: -4px;
 }
