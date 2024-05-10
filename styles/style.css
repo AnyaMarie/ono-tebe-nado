@@ -333,28 +333,18 @@
   text-align: center;
 }
 
-.footer-menu__item {
-
-}
-
 .footer-menu__item.active .footer-menu__item-link {
   text-decoration: none;
 }
 
-.footer-menu__item-link {
-}
-
 .footer-menu__item-link--underline {
-    text-decoration: none;
-    border-bottom: 1px solid black;
-    padding-bottom: 1px;   
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 1px;
 }
 
 .footer-socials {
-    display: flex;
-}
-
-.footer-socials__item {
+  display: flex;
 }
 
 .footer-socials__item img {
