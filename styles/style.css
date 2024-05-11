@@ -50,7 +50,6 @@
   letter-spacing: 1px;
 }
 
-
 .contacts-block {
   max-width: 240px;
   width: 100%;
@@ -60,22 +59,20 @@
   font-style: normal;
 }
 
-
 .nowrap {
   white-space: nowrap;
 }
 
 .d-block {
-    display: block;
+  display: block;
 }
 
 .contacts-block__link {
-    text-decoration: none;
-    border-bottom: 1px solid black;
-    padding-bottom: 0px;  
-    width: fit-content; 
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 0px;
+  width: fit-content;
 }
-
 
 .cover {
   min-height: 757px;
@@ -112,32 +109,28 @@
   text-transform: uppercase;
   padding-top: 167px;
   margin-top: 2px;
+  letter-spacing: 30px;
 }
 
 .cover-header__title-text-left {
   display: block;
-  margin-top: -5px;
-  margin-bottom: 5px;
-  margin-left: -6px;
-  letter-spacing: 30px;
 }
 
 .cover-header__title-text-center {
   display: block;
   text-align: center;
-  position: relative;
-  left: -11px;
-  top: 3px;
-  letter-spacing: 32px;
-  margin-left: -29px;
+  line-height: 123px;
 }
+/*
+В макетах центральный текст не отцентрирован по центру и находиться
+ чуть-чуть правее, без position relative либо padding/margin такого
+ добиться нельзя, но был комментарий, чтобы я убрала position relative 
+ и margin. 
+*/
 
 .cover-header__title-text-right {
   display: block;
   text-align: right;
-  position: relative;
-  right: -35px;
-  letter-spacing: 30px;
 }
 
 .cover-header__title-text-left > .cover-header__title-text-symbol {
@@ -214,7 +207,6 @@
   z-index: 1;
   background-repeat: no-repeat;
 }
-
 
 .lots-cards__item-link {
   position: relative;
@@ -295,7 +287,7 @@
   margin: 178px 50px 91px;
   display: flex;
   justify-content: space-between;
-  align-items:flex-start;
+  align-items: flex-start;
 }
 
 .footer-menu {
@@ -313,8 +305,6 @@
   border-bottom: none;
   padding-bottom: 0;
 }
-
-
 
 .footer-menu__item-link {
   text-decoration: none;
