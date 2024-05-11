@@ -10,54 +10,39 @@
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
   <body>
-    <main class="container">
+    <div class="container">
       <header class="header">
         <menu class="header-menu">
           <li class="header-menu__item active">
             <span class="header-menu__item-link">главная</span>
           </li>
           <li class="header-menu__item">
-            <a
-              href="#"
-              class="header-menu__item-link header-menu__item-link--small-spacing"
-              >посмотреть лоты
-            </a>
+            <a href="#" class="header-menu__item-link">посмотреть лоты </a>
           </li>
           <li class="header-menu__item">
-            <a
-              href="#"
-              class="header-menu__item-link header-menu__item-link--small-spacing"
-              >об аукционе
-            </a>
+            <a href="#" class="header-menu__item-link">об аукционе </a>
           </li>
         </menu>
         <a href="#" class="header-logo">
           <img src="./images/logo-black.svg" class="logo" alt="Лого" />
         </a>
-        <div class="contacts-block">
-          <div class="contacts-block__item">
-            <a
-              href="#"
-              class="contacts-block__item-link contacts-block__item-link--number"
-              ><sup>+</sup>9 999 555 5555</a
-            >
-          </div>
-          <div class="contacts-block__item">
-            <a
-              href="mailto:info@sobaka.ge"
-              class="contacts-block__item-link contacts-block__item-link--mail"
-              >info@sobaka.ge</a
-            >
-          </div>
-          <address class="contacts-block__item">
-            <span class="nowrap">наб. Принсенграхт 263-265,</span> Амстердам
-          </address>
-        </div>
+        <address class="contacts-block">
+          <a
+            href="#"
+            class="contacts-block__link d-block"
+            ><sup>+</sup>9 999 555 5555</a
+          >
+          <a
+            href="mailto:info@sobaka.ge"
+            class="contacts-block__link d-block"
+            >info@sobaka.ge</a
+          >
+          <span class="nowrap d-block">наб. Принсенграхт 263-265,</span>
+          Амстердам
+        </address>
       </header>
-      <section
-        class="cover"
-        style="background-image: url(./images/cover.jpg)"
-      >
+      <main>
+      <section class="cover overlay" style="background-image: url(./images/cover.jpg)">
         <div class="cover-header">
           <h1 class="cover-header__title">
             <span class="cover-header__title-text-left"
@@ -79,16 +64,13 @@
         </div>
       </section>
       <section class="lots">
-        <h2 class="lots-title h2">лоты</h2>
+        <h2 class="lots-title">лоты</h2>
         <div class="lots-cards">
           <!--Инлайновые стили здесь необходимы,т.к. выносить такое в css моветон-->
           <article
-            class="lots-cards__item"
+            class="lots-cards__item overlay"
             style="
-              background-image: url(./images/card-lot-01.jpg);
-              background-size: 165%;
-              background-position-x: 47%;
-            "
+              background-image: url(./images/card-lot-01.jpg);"
           >
             <h3 class="lots-cards__item-link">
               Фильм режиссёра, который бросил киношколу
@@ -99,7 +81,7 @@
             </p>
           </article>
           <article
-            class="lots-cards__item"
+            class="lots-cards__item overlay"
             style="background-image: url(./images/card-lot-02.jpg)"
           >
             <h3 class="lots-cards__item-link">
@@ -114,7 +96,7 @@
             </p>
           </article>
           <article
-            class="lots-cards__item"
+            class="lots-cards__item overlay"
             style="background-image: url(./images/card-lot-03.jpg)"
           >
             <h3 class="lots-cards__item-link">
@@ -139,7 +121,7 @@
           />
         </div>
         <div class="about-content">
-          <h2 class="about-content__title h2">об аукционе</h2>
+          <h2 class="about-content__title">об аукционе</h2>
           <div class="about-content__text">
             <p>
               Здесь вы не встретите очередное пафосное собрание невероятно
@@ -160,26 +142,22 @@
           </div>
         </div>
       </section>
+    </main>
       <footer class="footer">
-        <div class="contacts-block footer-contacts">
-          <div class="contacts-block__item">
-            <a
-              href="#"
-              class="contacts-block__item-link contacts-block__item-link--number"
-              ><sup>+</sup>9 999 555 5555</a
-            >
-          </div>
-          <div class="contacts-block__item">
-            <a
-              href="mailto:info@sobaka.ge"
-              class="contacts-block__item-link contacts-block__item-link--mail"
-              >info@sobaka.ge</a
-            >
-          </div>
-          <address class="contacts-block__item">
-            <span class="nowrap">наб. Принсенграхт 263-265,</span> Амстердам
-          </address>
-        </div>
+        <address class="contacts-block footer-contacts">
+          <a
+            href="#"
+            class="contacts-block__link d-block"
+            ><sup>+</sup>9 999 555 5555</a
+          >
+          <a
+            href="mailto:info@sobaka.ge"
+            class="contacts-block__link d-block"
+            >info@sobaka.ge</a
+          >
+          <span class="nowrap d-block">наб. Принсенграхт 263-265,</span>
+          Амстердам
+        </address>
         <menu class="footer-menu">
           <li class="footer-menu__item active">
             <a href="#" class="footer-menu__item-link">главная </a>
@@ -187,19 +165,19 @@
           <li class="footer-menu__item">
             <a
               href="#"
-              class="footer-menu__item-link footer-menu__item-link--underline"
+              class="footer-menu__item-link"
               >посмотреть лоты
             </a>
           </li>
           <li class="footer-menu__item">
             <a
               href="#"
-              class="footer-menu__item-link footer-menu__item-link--underline"
+              class="footer-menu__item-link"
               >об аукционе
             </a>
           </li>
         </menu>
-        <div class="footer-socials">
+        <nav class="footer-socials">
           <a href="#" class="footer-socials__item">
             <img src="./images/yt.svg" alt="Ютуб" />
           </a>
@@ -209,9 +187,8 @@
           <a href="#" class="footer-socials__item">
             <img src="./images/pinterest.svg" alt="Пинтерест" />
           </a>
-        </div>
+        </nav>
       </footer>
-    </main>
+    </div>
   </body>
 </html>
-
