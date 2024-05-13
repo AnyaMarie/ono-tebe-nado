@@ -110,42 +110,30 @@
   padding-top: 167px;
   margin-top: 2px;
   letter-spacing: 30px;
+  line-height: 125px;
 }
 
 .cover-header__title-text-left {
   display: block;
+  line-height: 115px;
 }
 
 .cover-header__title-text-center {
   display: block;
   text-align: center;
-  line-height: 123px;
 }
-/*
-В макетах центральный текст не отцентрирован по центру и находиться
- чуть-чуть правее, без position relative либо padding/margin такого
- добиться нельзя, но был комментарий, чтобы я убрала position relative 
- и margin. 
-*/
 
 .cover-header__title-text-right {
   display: block;
   text-align: right;
 }
 
-.cover-header__title-text-left > .cover-header__title-text-symbol {
-  position: relative;
-  left: 29px;
+.cover-header__title-text-symbol {
+  letter-spacing: 60px;
 }
 
-.cover-header__title-text-center > .cover-header__title-text-symbol {
-  position: relative;
-  left: 23px;
-}
-
-.cover-header__title-text-right > .cover-header__title-text-symbol {
-  position: relative;
-  left: -28px;
+.cover-header__title-text-symbol--spacing {
+  letter-spacing: 0;
 }
 
 .cover-content {
