@@ -98,7 +98,7 @@
 }
 
 .cover-header {
-  margin: 0 55px;
+  margin: 0 50px;
   position: relative;
 }
 
@@ -110,7 +110,7 @@
   padding-top: 167px;
   margin-top: 2px;
   letter-spacing: 30px;
-  line-height: 125px;
+  line-height: 100px;
 }
 
 .cover-header__title-text-left {
@@ -121,11 +121,13 @@
 .cover-header__title-text-center {
   display: block;
   text-align: center;
+  margin-top: 20px;
 }
 
 .cover-header__title-text-right {
   display: block;
   text-align: right;
+  margin-top: 20px;
 }
 
 .cover-header__title-text-symbol {
